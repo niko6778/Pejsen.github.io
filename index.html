@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raid Roster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Topbar: navn + faner. Selve indholdet tegnes af app.js i <main id="view"> -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⚔</span>
+      <span id="team-name">Raid Roster</span>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-act="tab" data-tab="week">Uge</button>
+      <button data-act="tab" data-tab="players">Spillere</button>
+      <button data-act="tab" data-tab="attendance">Fremmøde</button>
+      <button data-act="tab" data-tab="log">Log</button>
+      <button data-act="tab" data-tab="settings">Indstillinger</button>
+    </nav>
+    <button class="icon-btn" id="theme-btn" data-act="theme" title="Skift lyst/mørkt tema">☾</button>
+  </header>
+
+  <main id="view"></main>
+
+  <!-- Pop-up vinduer (fx Raid-Helper import) -->
+  <div id="dialog" class="overlay" hidden></div>
+  <!-- Små beskeder nederst på skærmen -->
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
